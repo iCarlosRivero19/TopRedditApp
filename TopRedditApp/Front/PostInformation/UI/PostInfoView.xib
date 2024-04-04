@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostInfoViewController" customModule="TopRedditApp" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="dHf-DW-t0p" id="fip-0J-eAa"/>
+                <outlet property="view" destination="lVe-1L-mm0" id="G3s-Hj-AOR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lVe-1L-mm0">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-DW-t0p">
+                    <rect key="frame" x="20" y="79" width="353" height="773"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Yox-BN-QDC"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dHf-DW-t0p" firstAttribute="leading" secondItem="Yox-BN-QDC" secondAttribute="leading" constant="20" id="0k4-uR-6xv"/>
+                <constraint firstAttribute="bottom" secondItem="dHf-DW-t0p" secondAttribute="bottom" id="KU3-qY-Di4"/>
+                <constraint firstItem="dHf-DW-t0p" firstAttribute="top" secondItem="Yox-BN-QDC" secondAttribute="top" constant="20" id="hvi-Uw-3sZ"/>
+                <constraint firstItem="Yox-BN-QDC" firstAttribute="trailing" secondItem="dHf-DW-t0p" secondAttribute="trailing" constant="20" id="lnI-Us-5qQ"/>
+            </constraints>
+            <point key="canvasLocation" x="275.57251908396944" y="-76.056338028169023"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
